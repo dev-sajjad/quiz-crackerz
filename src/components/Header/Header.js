@@ -42,7 +42,7 @@ const Header = () => {
          }`}
        >
          {routes.map((route) => (
-           <Link route={route}></Link>
+           <Link key={route.id} route={route}></Link>
          ))}
        </ul>
      </nav>
