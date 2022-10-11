@@ -6,7 +6,7 @@ const Topics = () => {
     const quizsData = useLoaderData();
     const quizs = quizsData.data;
     return (
-      <div className='my-5'>
+      <div className='my-5 overflow-hidden'>
         <div className='grid grid-cols-1 gap-4  md:grid-cols-2 w-8/12 mx-auto'>
           {quizs.map((quiz) => (
             <Quiz key={quiz.id} quiz={quiz}></Quiz>

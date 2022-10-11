@@ -13,7 +13,7 @@ const Header = () => {
      { id: 4, name: "Blog", path: "/blogs" },
    ];
    return (
-     <nav className="flex justify-between sticky top-0 shadow-lg shadow-slate-400 items-center bg-stone-800 w-full py-4">
+     <nav className="flex justify-between sticky top-0 shadow-lg shadow-slate-400 z-50 items-center bg-stone-800 w-full py-4">
        <div
          onClick={() => setOpen(!open)}
          className=" md:hidden ml-6 text-white"
