@@ -1,0 +1,16 @@
+.active {
+    background-color: #9CA3AF;
+    color: #FACA15;
+    padding: 6px 8px;
+    border-radius: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+  .active {
+    background-color: #9CA3AF;
+    color: #FACA15;
+    width: 40%;
+    padding: 6px 8px;
+    border-radius: 6px;
+  }
+}
