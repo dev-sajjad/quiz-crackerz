@@ -10,27 +10,29 @@ function App() {
   // create browser router
   const router = createBrowserRouter([
     {
-      path: '/',
+      path: "/",
       element: <Main></Main>,
       children: [
-       
         {
-          path: '/home',
-          element: <Home></Home>
+          path: "/home",
+          element: <Home></Home>,
         },
         {
-          path: '/topics',
-          element: <Topics></Topics>
+          path: "/topics",
+          loader: async () => {
+            return fetch("https://openapi.programming-hero.com/api/quiz");
+          },
+          element: <Topics></Topics>,
         },
         {
-          path: '/statistics',
-          element: <Statistics></Statistics>
+          path: "/statistics",
+          element: <Statistics></Statistics>,
         },
         {
-          path: '/blogs',
-          element: <Blogs></Blogs>
-        } 
-      ]
+          path: "/blogs",
+          element: <Blogs></Blogs>,
+        },
+      ],
     },
   ]);
   return (
