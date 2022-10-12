@@ -19,19 +19,16 @@ const Option = ({ option, id, correctAnswer, optionsData }) => {
     }
 
   return (
-    <div
-      onClick={handleAnswer}
-    className="border-2 shadow-md p-2.5 rounded-md hover:bg-slate-200"
-    >
-
+    <div className="border-2 shadow-md p-2.5 rounded-md hover:bg-slate-200">
       <input
+        onClick={handleAnswer}
         className="mr-2 font-medium"
         type="radio"
         name={id}
         id={option}
       />
       <label className="font-medium capitalize" htmlFor={option}>
-              {option}
+        {option}
       </label>
     </div>
   );
